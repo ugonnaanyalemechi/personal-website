@@ -1,0 +1,144 @@
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Fira Code", sans-serif;
+}
+
+/* Title Styles */
+.gradient-background {
+    background: linear-gradient(135deg, #E87500, #25336D, #1B2757, #010038, #E87500);
+    background-size: 180% 180%;
+    animation: gradient-animation 14s ease infinite;
+    height: 95vh;
+}
+
+.hex-background {
+    background-image: url("./images/hex-background.png"), url(./images/background-shading.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.navbar {
+    transition: 0.5s;
+}
+
+.navbar-brand {
+    opacity: 0.5;
+    padding-left: 5px;
+}
+
+.navbar-brand span {
+    display: none;
+}
+
+.navbar-scrolled {
+    background-color: black;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+
+    .navbar-brand {
+        opacity: 1;
+    }
+
+    .navbar-brand span {
+        display: inline;
+    }
+
+    a {
+        color: #FFFFFF;
+    }
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text-container {
+    text-align: center;
+    color: #FFFFFF;
+    position: relative;
+    top: 30%;
+}
+
+h1 {
+    font-family: "Inria serif", serif;
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 2rem;
+}
+
+.title-text-container > h2 {
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+}
+
+.arrow-container {
+    position: relative;
+    top: 45vh;
+
+    path {
+        height: 2em;
+        fill: #C1C1C1;
+    }
+}
+
+.arrow-container path, .arrow-container svg {
+    transition: 0.3s;
+}
+
+.arrow-container:hover {
+    path {
+        fill: #FFFFFF;
+    }
+
+    svg {
+        height: 3rem;
+    }
+}
+
+@media (max-width: 990px) {
+    h1 {
+        font-size: 3rem;
+        letter-spacing: 1.5rem;
+    }
+
+    .title-text-container > h2 {
+        margin-top: 1.6rem;
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 1rem;
+    
+    }
+    .title-text-container > h2 {
+        margin-top: 1.3rem;
+        font-size: 0.9rem;
+        letter-spacing: 0.05rem;
+    }
+}
