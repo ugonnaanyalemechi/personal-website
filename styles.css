@@ -47,7 +47,7 @@ body {
     height: 95vh;
 }
 
-.hex-background {
+.hex-title-background {
     background-image: url("./images/hex-background.png"), url(./images/background-shading.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,4 +201,55 @@ h1 {
     z-index: 2;
     left: 1rem;
     top: 1.5rem;
+}
+
+/*Projects Styles*/
+#projects {
+    color: #FFFFFF;
+    background: linear-gradient(180deg, #223E76, #010038);
+    height: 87vh;
+}
+
+.hex-projects-background {
+    background-image: url("./images/hex-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#projects h2 {
+    padding-top: 4rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    font-weight: bolder;
+}
+
+.projects-container-flex-only {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%
+}
+
+.projects-container {
+    display: grid;
+    grid-template-rows: 13rem 13rem;
+    grid-template-columns: 23rem 23rem;
+    grid-row-gap: 4.8rem;
+    grid-column-gap: 20rem;
+}
+
+.projects-container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-background-pair-1 {
+    background-color: #537EC5;
+    border-radius: 20px;
+}
+
+.project-background-pair-2 {
+    background-color: #3D4C8F;
+    border-radius: 20px;
 }
