@@ -82,7 +82,7 @@ h1 {
     font-family: "Inria serif", serif;
     font-size: 4rem;
     font-weight: 700;
-    letter-spacing: 2rem;
+    letter-spacing: 2vw;
 }
 
 .title-text-container>h2 {
@@ -120,8 +120,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    gap: 15vw;
+    height: 40rem;
+    gap: 13vw;
 }
 
 .about-text-container h2 {
@@ -175,7 +175,7 @@ h1 {
 #projects {
     color: #FFFFFF;
     background: linear-gradient(180deg, #223E76, #010038);
-    height: 85vh;
+    height: 47rem;
 }
 
 .hex-projects-background {
@@ -253,6 +253,10 @@ h1 {
     text-align: center;
 }
 
+#envelope {
+    height: 6.5rem;
+}
+
 .contact-container h2 {
     font-size: 2.7rem;
     font-weight: bolder;
@@ -272,9 +276,15 @@ h1 {
     border: none;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 990px) {
+    html {
+        font-size: 12px;
+    }
+
     #about {
         flex-direction: column;
+        height: 63rem;
+        gap: 13vw;
     }
 
     .about-text-container h2 {
@@ -286,17 +296,7 @@ h1 {
     }
 
     #projects {
-        height: 52vh;
-    }
-}
-
-@media (max-width: 900px) {
-    html {
-        font-size: 15px;
-    }
-
-    #projects {
-        height: 110vh;
+        height: 80rem;
     } 
 
     #projects h2 {
