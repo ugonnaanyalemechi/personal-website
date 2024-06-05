@@ -42,23 +42,6 @@ body {
 /* Title Styles */
 #title {
     height: 95vh;
-    background: linear-gradient(135deg, #E87500, #25336D, #1B2757, #010038, #E87500);
-    background-size: 180% 180%;
-    animation: gradient-animation 14s ease infinite;
-}
-
-@keyframes gradient-animation {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
 }
 
 .title-container {
@@ -274,6 +257,35 @@ h1 {
     padding: 1em;
     border-radius: 20px;
     border: none;
+}
+
+/* Footer Styles */
+#footer > div {
+    background-image: url("./images/hex-background.png"), url(./images/background-shading.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+/* Miscellaneous Styles */
+.gradient-background {
+    background: linear-gradient(135deg, #E87500, #25336D, #1B2757, #010038, #E87500);
+    background-size: 180% 180%;
+    animation: gradient-animation 14s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media (max-width: 990px) {
